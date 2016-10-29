@@ -59,6 +59,7 @@
     <Compile Include="Internal\BindingModels\MessageEntity.cs" />
     <Compile Include="Internal\BindingModels\PhotoSize.cs" />
     <Compile Include="Internal\BindingModels\Sticker.cs" />
+    <Compile Include="Internal\BindingModels\TelegramApiBotResponse.cs" />
     <Compile Include="Internal\BindingModels\Update.cs" />
     <Compile Include="Internal\BindingModels\User.cs" />
     <Compile Include="Internal\BindingModels\Venue.cs" />
