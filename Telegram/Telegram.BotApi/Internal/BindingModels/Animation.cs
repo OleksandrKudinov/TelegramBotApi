@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    internal class Animation
+    public class Animation
     {
         /// <summary>
         /// Unique file identifier

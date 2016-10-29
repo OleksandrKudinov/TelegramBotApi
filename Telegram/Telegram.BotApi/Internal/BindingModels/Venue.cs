@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    internal class Venue
+    public class Venue
     {
         /// <summary>
         /// Venue location

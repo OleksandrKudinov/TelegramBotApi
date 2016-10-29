@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    internal class Voice
+    public class Voice
     {
         /// <summary>
         /// Unique identifier for this file

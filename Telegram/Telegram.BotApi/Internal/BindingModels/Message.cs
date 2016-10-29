@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    internal class Message
+    public class Message
     {
         /// <summary>
         /// Unique message identifier

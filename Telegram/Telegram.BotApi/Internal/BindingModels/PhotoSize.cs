@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    internal class PhotoSize
+    public class PhotoSize
     {
         /// <summary>
         /// Unique identifier for this file

@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    internal class Location
+    public class Location
     {
         /// <summary>
         /// Longitude as defined by sender

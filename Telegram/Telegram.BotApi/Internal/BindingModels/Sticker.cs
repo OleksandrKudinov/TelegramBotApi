@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    internal class Sticker
+    public class Sticker
     {
         /// <summary>
         /// Unique identifier for this file

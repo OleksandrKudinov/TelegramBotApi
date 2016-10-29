@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    internal class Game
+    public class Game
     {
         /// <summary>
         /// Title of the game
