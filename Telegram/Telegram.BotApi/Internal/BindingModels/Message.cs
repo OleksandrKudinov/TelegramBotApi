@@ -49,7 +49,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// <summary>
         /// Optional. For replies, the original message. 
         /// Note that the Message object in this field will not contain further
-        ///  reply_to_message fields even if it itself is a reply.
+        /// reply_to_message fields even if it itself is a reply.
         /// </summary>
         [JsonProperty(PropertyName = "reply_to_message")]
         public Message ReplyToMessage { get; set; }

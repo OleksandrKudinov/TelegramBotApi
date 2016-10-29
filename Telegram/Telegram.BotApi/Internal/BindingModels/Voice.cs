@@ -11,13 +11,13 @@ namespace Telegram.BotApi.Internal.BindingModels
         public string FileId { get; set; }
 
         /// <summary>
-        /// Integer	Duration of the audio in seconds as defined by sender
+        /// Duration of the audio in seconds as defined by sender
         /// </summary>
         [JsonProperty(PropertyName = "duration")]
         public int Duration { get; set; }
 
         /// <summary>
-        /// String	Optional. MIME type of the file as defined by sender
+        /// Optional. MIME type of the file as defined by sender
         /// </summary>
         [JsonProperty(PropertyName = "mime_type")]
         public string MimeType { get; set; }
