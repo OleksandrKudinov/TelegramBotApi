@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BotConfig.cs" />
     <Compile Include="Internal\BindingModels\Animation.cs" />
     <Compile Include="Internal\BindingModels\Audio.cs" />
     <Compile Include="Internal\BindingModels\Chat.cs" />
