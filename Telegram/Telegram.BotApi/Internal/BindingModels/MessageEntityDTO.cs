@@ -38,6 +38,6 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. For “text_mention” only, the mentioned user
         /// </summary>
         [JsonProperty(PropertyName = "user")]
-        public User User { get; set; }
+        public UserDTO User { get; set; }
     }
 }

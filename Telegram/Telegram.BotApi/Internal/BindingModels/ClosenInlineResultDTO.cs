@@ -14,7 +14,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// The user that chose the result
         /// </summary>
         [JsonProperty(PropertyName = "from")]
-        public User From { get; set; }
+        public UserDTO From { get; set; }
 
         /// <summary>
         /// Optional. Sender location, only for bots that require user location

@@ -14,7 +14,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. Sender, can be empty for messages sent to channels
         /// </summary>
         [JsonProperty(PropertyName = "from")]
-        public User FromUser { get; set; }
+        public UserDTO FromUser { get; set; }
 
         /// <summary>
         /// Date the message was sent in Unix time
@@ -32,7 +32,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. For forwarded messages, sender of the original message
         /// </summary>
         [JsonProperty(PropertyName = "forward_from")]
-        public User ForwardFromUser { get; set; }
+        public UserDTO ForwardFromUser { get; set; }
 
         /// <summary>
         /// Optional. For messages forwarded from a channel, information about the original channel
@@ -146,13 +146,13 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. A new member was added to the group, information about them (this member may be the bot itself)
         /// </summary>
         [JsonProperty(PropertyName = "new_chat_member")]
-        public User NewChatMember { get; set; }
+        public UserDTO NewChatMember { get; set; }
 
         /// <summary>
         /// Optional. A member was removed from the group, information about them (this member may be the bot itself)
         /// </summary>
         [JsonProperty(PropertyName = "left_chat_member")]
-        public User LeftChatMember { get; set; }
+        public UserDTO LeftChatMember { get; set; }
 
         /// <summary>
         /// Optional. A chat title was changed to this value

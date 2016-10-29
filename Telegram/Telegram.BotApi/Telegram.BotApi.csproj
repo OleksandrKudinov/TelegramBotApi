@@ -61,7 +61,7 @@
     <Compile Include="Internal\BindingModels\StickerDTO.cs" />
     <Compile Include="Internal\BindingModels\TelegramApiBotResponse.cs" />
     <Compile Include="Internal\BindingModels\UpdateDTO.cs" />
-    <Compile Include="Internal\BindingModels\User.cs" />
+    <Compile Include="Internal\BindingModels\UserDTO.cs" />
     <Compile Include="Internal\BindingModels\VenueDTO.cs" />
     <Compile Include="Internal\BindingModels\VideoDTO.cs" />
     <Compile Include="Internal\BindingModels\VoiceDTO.cs" />

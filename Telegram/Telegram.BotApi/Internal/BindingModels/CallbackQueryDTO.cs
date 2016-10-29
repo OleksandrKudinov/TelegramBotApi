@@ -14,7 +14,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Sender
         /// </summary>
         [JsonProperty(PropertyName = "from")]
-        public User From { get; set; }
+        public UserDTO From { get; set; }
 
         /// <summary>
         /// Optional. Message with the callback button that originated the query. 
