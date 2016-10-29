@@ -23,9 +23,9 @@ namespace Telegram.BotApi.Internal.BindingModels
         public string MimeType { get; set; }
 
         /// <summary>
-        /// Integer	Optional. File size
+        /// Optional. File size
         /// </summary>
         [JsonProperty(PropertyName = "file_size")]
-        public int FileSize { get; set; }
+        public int? FileSize { get; set; }
     }
 }
