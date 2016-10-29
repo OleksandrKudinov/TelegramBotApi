@@ -1,2 +1,15 @@
 Telegram/Telegram.BotApi/obj/
 Telegram/.vs/Telegram/v14/.suo
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/net20/Newtonsoft.Json.dll
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/net20/Newtonsoft.Json.xml
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/net35/Newtonsoft.Json.dll
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/net35/Newtonsoft.Json.xml
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/net40/Newtonsoft.Json.dll
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/net40/Newtonsoft.Json.xml
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/netstandard1.0/Newtonsoft.Json.dll
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/netstandard1.0/Newtonsoft.Json.xml
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll
+Telegram/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml
+Telegram/packages/Newtonsoft.Json.9.0.1/tools/install.ps1
