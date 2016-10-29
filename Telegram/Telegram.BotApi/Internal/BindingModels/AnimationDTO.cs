@@ -2,31 +2,25 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Audio
+    public class AnimationDTO
     {
         /// <summary>
-        /// Unique identifier for this file
+        /// Unique file identifier
         /// </summary>
         [JsonProperty(PropertyName = "file_id")]
         public string FileId { get; set; }
 
         /// <summary>
-        /// Duration of the audio in seconds as defined by sender
+        /// Optional. Animation thumbnail as defined by sender
         /// </summary>
-        [JsonProperty(PropertyName = "duration")]
-        public int Duration { get; set; }
+        [JsonProperty(PropertyName = "thumb")]
+        public PhotoSizeDTO Thumb { get; set; }
 
         /// <summary>
-        /// Optional. Performer of the audio as defined by sender or by audio tags
+        /// Optional. Original animation filename as defined by sender
         /// </summary>
-        [JsonProperty(PropertyName = "performer")]
-        public string Performer { get; set; }
-
-        /// <summary>
-        /// Optional. Title of the audio as defined by sender or by audio tags
-        /// </summary>
-        [JsonProperty(PropertyName = "title")]
-        public string Title { get; set; }
+        [JsonProperty(PropertyName = "file_name")]
+        public string FileName { get; set; }
 
         /// <summary>
         /// Optional. MIME type of the file as defined by sender
@@ -35,7 +29,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         public string MimeType { get; set; }
 
         /// <summary>
-        /// Optional. File size
+        ///  Optional. File size
         /// </summary>
         [JsonProperty(PropertyName = "file_size")]
         public int? FileSize { get; set; }

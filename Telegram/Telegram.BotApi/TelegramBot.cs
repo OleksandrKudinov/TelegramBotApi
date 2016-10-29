@@ -18,7 +18,7 @@ namespace Telegram.BotApi
             _config = config;
         }
 
-        public Update[] GetUpdates()
+        public UpdateDTO[] GetUpdates()
         {
             var response = Invoke(Method.getUpdates, null);
             return response.result;

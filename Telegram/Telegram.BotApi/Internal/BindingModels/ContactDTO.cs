@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Contact
+    public class ContactDTO
     {
         /// <summary>
         /// Contact's phone number

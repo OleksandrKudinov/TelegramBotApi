@@ -2,13 +2,13 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Venue
+    public class VenueDTO
     {
         /// <summary>
         /// Venue location
         /// </summary>
         [JsonProperty(PropertyName = "location")]
-        public Location Location { get; set; }
+        public LocationDTO Location { get; set; }
 
         /// <summary>
         /// Name of the venue

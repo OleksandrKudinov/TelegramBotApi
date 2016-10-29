@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class CallbackQuery
+    public class CallbackQueryDTO
     {
         /// <summary>
         /// Unique identifier for this query
@@ -21,7 +21,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Note that message content and message date will not be available if the message is too old
         /// </summary>
         [JsonProperty(PropertyName = "message")]
-        public Message Message { get; set; }
+        public MessageDTO Message { get; set; }
 
         /// <summary>
         /// Optional. Identifier of the message sent via the bot in inline mode, that originated the query.

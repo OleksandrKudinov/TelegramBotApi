@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Document
+    public class DocumentDTO
     {
         /// <summary>
         /// Unique file identifier
@@ -14,7 +14,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. Document thumbnail as defined by sender
         /// </summary>
         [JsonProperty(PropertyName = "thumb")]
-        public PhotoSize Thumb { get; set; }
+        public PhotoSizeDTO Thumb { get; set; }
 
         /// <summary>
         /// Optional. Original filename as defined by sender

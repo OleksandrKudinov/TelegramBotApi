@@ -6,7 +6,7 @@ namespace Telegram.BotApi.Internal.BindingModels
     /// This object represents one special entity in a text message. 
     /// For example, hashtags, usernames, URLs, etc.
     /// </summary>
-    public class MessageEntity
+    public class MessageEntityDTO
     {
         // TODO : string to enum
         /// <summary>

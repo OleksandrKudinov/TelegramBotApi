@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class PhotoSize
+    public class VideoDTO
     {
         /// <summary>
         /// Unique identifier for this file
@@ -10,18 +10,35 @@ namespace Telegram.BotApi.Internal.BindingModels
         [JsonProperty(PropertyName = "file_id")]
         public string FileId { get; set; }
 
-
         /// <summary>
-        /// Photo width
+        /// Video width as defined by sender
         /// </summary>
         [JsonProperty(PropertyName = "width")]
         public int Width { get; set; }
 
         /// <summary>
-        /// Photo height
+        /// Video height as defined by sender
         /// </summary>
         [JsonProperty(PropertyName = "height")]
         public int Height { get; set; }
+
+        /// <summary>
+        /// Duration of the video in seconds as defined by sender
+        /// </summary>
+        [JsonProperty(PropertyName = "duration")]
+        public int Duration { get; set; }
+
+        /// <summary>
+        /// Optional. Video thumbnail
+        /// </summary>
+        [JsonProperty(PropertyName = "thumb")]
+        public PhotoSizeDTO Thumb { get; set; }
+
+        /// <summary>
+        /// Optional. Mime type of a file as defined by sender
+        /// </summary>
+        [JsonProperty(PropertyName = "mime_type")]
+        public string MimeType { get; set; }
 
         /// <summary>
         /// Optional. File size

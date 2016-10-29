@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Message
+    public class MessageDTO
     {
         /// <summary>
         /// Unique message identifier
@@ -26,7 +26,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Conversation the message belongs to
         /// </summary>
         [JsonProperty(PropertyName = "char")]
-        public Chat Chat { get; set; }
+        public ChatDTO Chat { get; set; }
 
         /// <summary>
         /// Optional. For forwarded messages, sender of the original message
@@ -38,7 +38,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. For messages forwarded from a channel, information about the original channel
         /// </summary>
         [JsonProperty(PropertyName = "forward_from_chat")]
-        public Chat ForwardFromChat { get; set; }
+        public ChatDTO ForwardFromChat { get; set; }
 
         /// <summary>
         /// Optional. For forwarded messages, date the original message was sent in Unix time
@@ -52,7 +52,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// reply_to_message fields even if it itself is a reply.
         /// </summary>
         [JsonProperty(PropertyName = "reply_to_message")]
-        public Message ReplyToMessage { get; set; }
+        public MessageDTO ReplyToMessage { get; set; }
 
         /// <summary>
         /// Optional. Date the message was last edited in Unix time
@@ -73,19 +73,19 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// </summary>
         // TODO 
         [JsonProperty(PropertyName = "entities")]
-        public MessageEntity[] Entities { get; set; }
+        public MessageEntityDTO[] Entities { get; set; }
 
         /// <summary>
         /// Optional. Message is an audio file, information about the file
         /// </summary>
         [JsonProperty(PropertyName = "audio")]
-        public Audio Audio { get; set; }
+        public AudioDTO AudioDTO { get; set; }
 
         /// <summary>
         /// Optional. Message is a general file, information about the file
         /// </summary>
         [JsonProperty(PropertyName = "document")]
-        public Document Document { get; set; }
+        public DocumentDTO Document { get; set; }
 
         /// <summary>
         /// Optional. Message is a game, information about the game.
@@ -98,25 +98,25 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// </summary>
         // TODO
         [JsonProperty(PropertyName = "photo")]
-        public PhotoSize[] Photo { get; set; }
+        public PhotoSizeDTO[] Photo { get; set; }
 
         /// <summary>
         /// Optional. Message is a sticker, information about the sticker
         /// </summary>
         [JsonProperty(PropertyName = "sticker")]
-        public Sticker Sticker { get; set; }
+        public StickerDTO Sticker { get; set; }
 
         /// <summary>
         /// Optional. Message is a video, information about the video
         /// </summary>
         [JsonProperty(PropertyName = "video")]
-        public Video Video { get; set; }
+        public VideoDTO Video { get; set; }
 
         /// <summary>
         /// Optional. Message is a voice message, information about the file
         /// </summary>
         [JsonProperty(PropertyName = "voice")]
-        public Voice Voice { get; set; }
+        public VoiceDTO Voice { get; set; }
 
         /// <summary>
         /// Optional. Caption for the document, photo or video, 0-200 characters
@@ -128,19 +128,19 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. Message is a shared contact, information about the contact
         /// </summary>
         [JsonProperty(PropertyName = "contact")]
-        public Contact Contact { get; set; }
+        public ContactDTO Contact { get; set; }
 
         /// <summary>
         /// Optional. Message is a shared location, information about the location
         /// </summary>
         [JsonProperty(PropertyName = "location")]
-        public Location Location { get; set; }
+        public LocationDTO Location { get; set; }
 
         /// <summary>
         /// Optional. Message is a venue, information about the venue
         /// </summary>
         [JsonProperty(PropertyName = "venue")]
-        public Venue Venue { get; set; }
+        public VenueDTO Venue { get; set; }
 
         /// <summary>
         /// Optional. A new member was added to the group, information about them (this member may be the bot itself)
@@ -165,7 +165,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// </summary>
         // TODO
         [JsonProperty(PropertyName = "new_chat_photo")]
-        public PhotoSize[] NewChatPhoto { get; set; }
+        public PhotoSizeDTO[] NewChatPhoto { get; set; }
 
         /// <summary>
         /// Optional. Service message: the chat photo was deleted
@@ -223,6 +223,6 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// will not contain further reply_to_message fields even if it is itself a reply.
         /// </summary>
         [JsonProperty(PropertyName = "pinned_message")]
-        public Message PinnedMessage { get; set; }
+        public MessageDTO PinnedMessage { get; set; }
     }
 }

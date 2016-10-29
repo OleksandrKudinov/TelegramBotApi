@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Sticker
+    public class PhotoSizeDTO
     {
         /// <summary>
         /// Unique identifier for this file
@@ -10,32 +10,18 @@ namespace Telegram.BotApi.Internal.BindingModels
         [JsonProperty(PropertyName = "file_id")]
         public string FileId { get; set; }
 
+
         /// <summary>
-        /// Sticker width
+        /// Photo width
         /// </summary>
         [JsonProperty(PropertyName = "width")]
         public int Width { get; set; }
 
         /// <summary>
-        /// Sticker height
+        /// Photo height
         /// </summary>
         [JsonProperty(PropertyName = "height")]
         public int Height { get; set; }
-
-
-        /// <summary>
-        /// Optional. Sticker thumbnail in .webp or .jpg format
-        /// </summary>
-        [JsonProperty(PropertyName = "thumb")]
-        public PhotoSize Thumb { get; set; }
-
-
-        /// <summary>
-        /// Optional. Emoji associated with the sticker
-        /// </summary>
-        [JsonProperty(PropertyName = "emoji")]
-        public string Emoji { get; set; }
-
 
         /// <summary>
         /// Optional. File size

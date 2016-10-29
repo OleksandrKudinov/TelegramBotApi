@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Chat
+    public class ChatDTO
     {
         /// <summary>
         /// Unique identifier for this chat. 

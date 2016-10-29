@@ -3,6 +3,6 @@
     public class TelegramApiBotResponse
     {
         public string ok { get; set; }
-        public Update[] result { get; set; }
+        public UpdateDTO[] result { get; set; }
     }
 }

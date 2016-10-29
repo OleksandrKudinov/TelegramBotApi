@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Video
+    public class StickerDTO
     {
         /// <summary>
         /// Unique identifier for this file
@@ -11,34 +11,31 @@ namespace Telegram.BotApi.Internal.BindingModels
         public string FileId { get; set; }
 
         /// <summary>
-        /// Video width as defined by sender
+        /// Sticker width
         /// </summary>
         [JsonProperty(PropertyName = "width")]
         public int Width { get; set; }
 
         /// <summary>
-        /// Video height as defined by sender
+        /// Sticker height
         /// </summary>
         [JsonProperty(PropertyName = "height")]
         public int Height { get; set; }
 
-        /// <summary>
-        /// Duration of the video in seconds as defined by sender
-        /// </summary>
-        [JsonProperty(PropertyName = "duration")]
-        public int Duration { get; set; }
 
         /// <summary>
-        /// Optional. Video thumbnail
+        /// Optional. Sticker thumbnail in .webp or .jpg format
         /// </summary>
         [JsonProperty(PropertyName = "thumb")]
-        public PhotoSize Thumb { get; set; }
+        public PhotoSizeDTO Thumb { get; set; }
+
 
         /// <summary>
-        /// Optional. Mime type of a file as defined by sender
+        /// Optional. Emoji associated with the sticker
         /// </summary>
-        [JsonProperty(PropertyName = "mime_type")]
-        public string MimeType { get; set; }
+        [JsonProperty(PropertyName = "emoji")]
+        public string Emoji { get; set; }
+
 
         /// <summary>
         /// Optional. File size

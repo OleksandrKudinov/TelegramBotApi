@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class InlineQuery
+    public class InlineQueryDTO
     {
         /// <summary>
         /// Unique identifier for this query
@@ -20,7 +20,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. Sender location, only for bots that request user location
         /// </summary>
         [JsonProperty(PropertyName = "location")]
-        public Location Location { get; set; }
+        public LocationDTO Location { get; set; }
 
         /// <summary>
         /// Text of the query (up to 512 characters)

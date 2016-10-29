@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class Voice
+    public class AudioDTO
     {
         /// <summary>
         /// Unique identifier for this file
@@ -15,6 +15,18 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// </summary>
         [JsonProperty(PropertyName = "duration")]
         public int Duration { get; set; }
+
+        /// <summary>
+        /// Optional. Performer of the audio as defined by sender or by audio tags
+        /// </summary>
+        [JsonProperty(PropertyName = "performer")]
+        public string Performer { get; set; }
+
+        /// <summary>
+        /// Optional. Title of the audio as defined by sender or by audio tags
+        /// </summary>
+        [JsonProperty(PropertyName = "title")]
+        public string Title { get; set; }
 
         /// <summary>
         /// Optional. MIME type of the file as defined by sender

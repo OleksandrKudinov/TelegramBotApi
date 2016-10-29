@@ -2,7 +2,7 @@
 
 namespace Telegram.BotApi.Internal.BindingModels
 {
-    public class ClosenInlineResult
+    public class ClosenInlineResultDTO
     {
         /// <summary>
         /// The unique identifier for the result that was chosen
@@ -20,7 +20,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. Sender location, only for bots that require user location
         /// </summary>
         [JsonProperty(PropertyName = "location")]
-        public Location Location { get; set; }
+        public LocationDTO Location { get; set; }
 
         /// <summary>
         /// Optional. Identifier of the sent inline message. Available only if there is an inline keyboard attached to the message. Will be also received in callback queries and can be used to edit the message.
