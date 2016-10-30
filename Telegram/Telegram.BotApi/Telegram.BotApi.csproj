@@ -46,6 +46,13 @@
   <ItemGroup>
     <Compile Include="BotConfig.cs" />
     <Compile Include="Entities\Chat.cs" />
+    <Compile Include="Entities\MediaTypes\Audio.cs" />
+    <Compile Include="Entities\MediaTypes\Document.cs" />
+    <Compile Include="Entities\MediaTypes\MediaFile.cs" />
+    <Compile Include="Entities\MediaTypes\Photo.cs" />
+    <Compile Include="Entities\MediaTypes\Sticker.cs" />
+    <Compile Include="Entities\MediaTypes\Video.cs" />
+    <Compile Include="Entities\MediaTypes\Voice.cs" />
     <Compile Include="Entities\Message.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Internal\BindingModels\AnimationDTO.cs" />
