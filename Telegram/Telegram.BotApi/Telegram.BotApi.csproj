@@ -45,7 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BotConfig.cs" />
+    <Compile Include="Entities\AudioMessage.cs" />
     <Compile Include="Entities\Chat.cs" />
+    <Compile Include="Entities\FileMessage.cs" />
+    <Compile Include="Entities\Location.cs" />
+    <Compile Include="Entities\LocationMessage.cs" />
     <Compile Include="Entities\MediaTypes\Audio.cs" />
     <Compile Include="Entities\MediaTypes\Document.cs" />
     <Compile Include="Entities\MediaTypes\MediaFile.cs" />
@@ -54,7 +58,12 @@
     <Compile Include="Entities\MediaTypes\Video.cs" />
     <Compile Include="Entities\MediaTypes\Voice.cs" />
     <Compile Include="Entities\Message.cs" />
+    <Compile Include="Entities\PhotoMessage.cs" />
+    <Compile Include="Entities\TextMessage.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\VenueMessage.cs" />
+    <Compile Include="Entities\VideoMessage.cs" />
+    <Compile Include="Entities\VoiceMessage.cs" />
     <Compile Include="Internal\BindingModels\AnimationDTO.cs" />
     <Compile Include="Internal\BindingModels\AudioDTO.cs" />
     <Compile Include="Internal\BindingModels\CallbackQueryDTO.cs" />
