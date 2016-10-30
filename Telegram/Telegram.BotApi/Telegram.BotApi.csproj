@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BotConfig.cs" />
+    <Compile Include="Entities\Chat.cs" />
+    <Compile Include="Entities\Message.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Internal\BindingModels\AnimationDTO.cs" />
     <Compile Include="Internal\BindingModels\AudioDTO.cs" />
     <Compile Include="Internal\BindingModels\CallbackQueryDTO.cs" />
