@@ -79,7 +79,7 @@ namespace Telegram.BotApi.Internal.BindingModels
         /// Optional. Message is an audio file, information about the file
         /// </summary>
         [JsonProperty(PropertyName = "audio")]
-        public AudioDTO AudioDTO { get; set; }
+        public AudioDTO Audio { get; set; }
 
         /// <summary>
         /// Optional. Message is a general file, information about the file

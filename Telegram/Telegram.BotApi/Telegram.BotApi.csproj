@@ -55,6 +55,7 @@
     <Compile Include="Internal\BindingModels\ClosenInlineResultDTO.cs" />
     <Compile Include="Internal\BindingModels\ContactDTO.cs" />
     <Compile Include="Internal\BindingModels\DocumentDTO.cs" />
+    <Compile Include="Internal\BindingModels\FileDTO.cs" />
     <Compile Include="Internal\BindingModels\Game.cs" />
     <Compile Include="Internal\BindingModels\InlineQueryDTO.cs" />
     <Compile Include="Internal\BindingModels\LocationDTO.cs" />
