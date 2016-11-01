@@ -81,7 +81,7 @@
     <Compile Include="Internal\BindingModels\MessageEntityDTO.cs" />
     <Compile Include="Internal\BindingModels\PhotoSizeDTO.cs" />
     <Compile Include="Internal\BindingModels\StickerDTO.cs" />
-    <Compile Include="Internal\BindingModels\TelegramApiBotResponse.cs" />
+    <Compile Include="Internal\BindingModels\TelegramBotApiResponse.cs" />
     <Compile Include="Internal\BindingModels\UpdateDTO.cs" />
     <Compile Include="Internal\BindingModels\UserDTO.cs" />
     <Compile Include="Internal\BindingModels\VenueDTO.cs" />

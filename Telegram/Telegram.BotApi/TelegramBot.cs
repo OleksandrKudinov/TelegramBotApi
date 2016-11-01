@@ -20,11 +20,11 @@ namespace Telegram.BotApi
 
         public UpdateDTO[] GetUpdates()
         {
-            var response = Invoke(Method.getUpdates, null);
-            return response.result;
+            var response = Invoke<UpdateDTO[]>(Method.getUpdates, null);
+            return response.Data;
         }
 
-        private TelegramApiBotResponse Invoke(Method method, object args)
+        private TelegramBotApiResponse<T> Invoke<T>(Method method, object args)
         {
             var url = GetUrl(method);
             var request = HttpWebRequest.Create(url);
@@ -37,7 +37,7 @@ namespace Telegram.BotApi
                 serializer.Serialize(new JsonTextWriter(new StreamWriter(stream)), args);
             }
 
-            TelegramApiBotResponse response = (TelegramApiBotResponse)serializer.Deserialize(new JsonTextReader(new StreamReader(request.GetResponse().GetResponseStream())), typeof(TelegramApiBotResponse));
+            var response = (TelegramBotApiResponse<T>)serializer.Deserialize(new JsonTextReader(new StreamReader(request.GetResponse().GetResponseStream())), typeof(TelegramBotApiResponse<T>));
 
             return response;
         }
