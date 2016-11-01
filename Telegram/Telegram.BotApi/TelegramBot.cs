@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using System.Text;
 using Newtonsoft.Json;
 using Telegram.BotApi.Internal.BindingModels;
 
@@ -20,32 +21,47 @@ namespace Telegram.BotApi
 
         public UpdateDTO[] GetUpdates()
         {
-            var response = Invoke<UpdateDTO[]>(Method.getUpdates, null);
+            TelegramBotApiResponse<UpdateDTO[]> response = Invoke<UpdateDTO[]>("getUpdates", null);
             return response.Data;
         }
 
-        private TelegramBotApiResponse<T> Invoke<T>(Method method, object args)
+        private TelegramBotApiResponse<T> Invoke<T>(string method, object args)
         {
-            var url = GetUrl(method);
-            var request = HttpWebRequest.Create(url);
-            request.Method = "POST";
+            var url = GenerateUriForMethod(method);
 
-            var serializer = JsonSerializer.Create();
+            WebRequest request = WebRequest.Create(url);
+            request.Method = "POST";
+            request.ContentType = "application/json";
+
             if (args != null)
             {
-                var stream = request.GetRequestStream();
-                serializer.Serialize(new JsonTextWriter(new StreamWriter(stream)), args);
+                string requestJson = JsonConvert.SerializeObject(args);
+                var bytes = Encoding.UTF8.GetBytes(requestJson);
+                request.ContentLength = bytes.Length;
+
+                using (var requestStream = request.GetRequestStream())
+                {
+                    requestStream.Write(bytes, 0, bytes.Length);
+                }
             }
 
-            var response = (TelegramBotApiResponse<T>)serializer.Deserialize(new JsonTextReader(new StreamReader(request.GetResponse().GetResponseStream())), typeof(TelegramBotApiResponse<T>));
+            WebResponse response = request.GetResponse();
 
-            return response;
+            string rawResponse = null;
+
+            using (var stream = new StreamReader(response.GetResponseStream()))
+            {
+                rawResponse = stream.ReadToEnd();
+            }
+
+            TelegramBotApiResponse<T> apiResponse = JsonConvert.DeserializeObject<TelegramBotApiResponse<T>>(rawResponse);
+            return apiResponse;
         }
 
-        private string GetUrl(Method method)
+        private string GenerateUriForMethod(string method)
         {
             // TODO change method.ToString to dictionary;
-            string url = string.Format(_config.Url, _config.Token, method.ToString());
+            string url = string.Format(_config.Url, _config.Token, method);
             return url;
         }
 
@@ -53,10 +69,5 @@ namespace Telegram.BotApi
 
         public BotConfig Config { get { return _config; } }
         private readonly BotConfig _config;
-    }
-
-    enum Method
-    {
-        getUpdates
     }
 }
