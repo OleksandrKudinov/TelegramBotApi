@@ -47,6 +47,7 @@
     <Compile Include="BotConfig.cs" />
     <Compile Include="Entities\AudioMessage.cs" />
     <Compile Include="Entities\Chat.cs" />
+    <Compile Include="Entities\DocumentMessage.cs" />
     <Compile Include="Entities\FileMessage.cs" />
     <Compile Include="Entities\Location.cs" />
     <Compile Include="Entities\LocationMessage.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Entities\MediaTypes\Voice.cs" />
     <Compile Include="Entities\Message.cs" />
     <Compile Include="Entities\PhotoMessage.cs" />
+    <Compile Include="Entities\StickerMessage.cs" />
     <Compile Include="Entities\TextMessage.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\VenueMessage.cs" />
