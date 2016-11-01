@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Telegram.BotApi.Entities.MediaTypes
+﻿namespace Telegram.BotApi.Entities.MediaTypes
 {
     public class Sticker : MediaFile
     {

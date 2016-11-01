@@ -13,7 +13,7 @@ namespace Telegram.BotApi.Entities
         /// <summary>
         /// Optional. Sender, can be empty for messages sent to channels
         /// </summary>
-        public User FromUser { get; set; }
+        public UserDTO FromUser { get; set; }
 
         /// <summary>
         /// Date the message was sent in Unix time (fixed to DateTime)
@@ -23,17 +23,17 @@ namespace Telegram.BotApi.Entities
         /// <summary>
         /// Conversation the message belongs to
         /// </summary>
-        public Chat Chat { get; set; }
+        public ChatDTO Chat { get; set; }
 
         /// <summary>
         /// Optional. For forwarded messages, sender of the original message
         /// </summary>
-        public User ForwardFromUser { get; set; }
+        public UserDTO ForwardFromUser { get; set; }
 
         /// <summary>
         /// Optional. For messages forwarded from a channel, information about the original channel
         /// </summary>
-        public Chat ForwardFromChat { get; set; }
+        public ChatDTO ForwardFromChat { get; set; }
 
         /// <summary>
         /// Optional. For forwarded messages, date the original message was sent in Unix time (fixed to DateTime)
@@ -51,12 +51,6 @@ namespace Telegram.BotApi.Entities
         /// Optional. Date the message was last edited in Unix time (fixed to DateTime)
         /// </summary>
         public DateTime? EditDate { get; set; }
-
-        /// <summary>
-        /// Optional. For text messages, 
-        /// the actual UTF-8 text of the message, 0-4096 characters.
-        /// </summary>
-        public string Text { get; set; }
 
         /// <summary>
         /// Optional. For text messages, special entities like usernames,
